@@ -3,11 +3,19 @@ package br.com.desafio.dominio;
 import java.time.LocalDate;
 
 public class Mentoria {
-   private String titulo;
-   private String descricao;
-   private LocalDate date;
 
+   private LocalDate date;
+   private String descricao;
+   private String titulo;
    public Mentoria() {
+   }
+
+   public String getDescricao() {
+      return descricao;
+   }
+
+   public void setDescricao(String descricao) {
+      this.descricao = descricao;
    }
 
    public String getTitulo() {
@@ -18,13 +26,7 @@ public class Mentoria {
       this.titulo = titulo;
    }
 
-   public String getDescricao() {
-      return descricao;
-   }
 
-   public void setDescricao(String descricao) {
-      this.descricao = descricao;
-   }
 
    public LocalDate getDate() {
       return date;
